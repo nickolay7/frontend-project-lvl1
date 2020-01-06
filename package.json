@@ -1,5 +1,5 @@
 {
-  "name": "frontend-pro-lvl1",
+  "name": "frontend-project-lvl1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -24,14 +24,10 @@
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
   },
-  "devDependencies": {
+  "devDependendencies": {
     "@babel/cli": "^7.7.0",
     "@babel/core": "^7.7.2",
     "@babel/node": "^7.7.0",
-    "@babel/preset-env": "^7.7.1",
-    "@babel/plugin-proposal-pipeline-operator": "^7.5.0"
-  },
-  "dependencies": {
-    "readline-sync": "^1.4.10"
+    "@babel/preset-env": "^7.7.1" 
   }
 }
