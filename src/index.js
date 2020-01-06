@@ -1,3 +1,4 @@
-import readlineSynk from 'readline-synk';
+import { readlineSync } from 'readline-sync';
 
-export const actual = readlineSync.question('May I have your name?');
+const actual = readlineSync.question('May I have your name?');
+export { actual };
