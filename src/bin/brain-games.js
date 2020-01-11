@@ -9,7 +9,7 @@ const begin = () => {
   const user = userName('May I have your name? ');
   console.log(`Hello, ${user}!`);
   console.log('');
+  return user;
 };
-begin();
 
 export default begin;
