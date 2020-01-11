@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import begin from './brain-games.js';
+import begin from './brain-games';
 
 begin();
