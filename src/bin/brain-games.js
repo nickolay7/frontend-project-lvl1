@@ -2,9 +2,9 @@
 
 import userName from '../index';
 
-const begin = () => {
+const begin = (instruct) => {
   console.log('Welcome to the Brain Games!');
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  console.log(instruct);
   console.log('');
   const user = userName('May I have your name? ');
   console.log(`Hello, ${user}!`);
