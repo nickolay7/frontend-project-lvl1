@@ -1,23 +1,23 @@
 import readlineSync from 'readline-sync';
+import { cons, car, cdr } from '@hexlet/pairs';
 
 const actual = (query) => readlineSync.question(query);
-const rand = () => Math.floor(Math.random() ** 2 * 100);
-export const even = (user, i = 1) => {
-  if (i === 4) {
-    return console.log(`Congratulations, ${user}!`);
+export const rand = () => Math.floor(Math.random() ** 2 * 100);
+export const engine = (user, func) => {
+  let pair = func();
+  for (let i = 1; i !== 4; i += 1) {
+    let quest = car(pair);
+    let answer = cdr(pair);
+    console.log(`Question: ${quest}`);
+    const userAnswer = actual('You answer: ');
+    if (answer === userAnswer) {
+      console.log('Correct!');
+    } else {
+      return console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}. Let's try again, ${user}!`);
+    }
+    pair = func();
   }
-  const num = rand();
-  const flag = num % 2 === 0 ? 1 : 0;
-  const noYes = flag === 0 ? 'yes' : 'no';
-  const yesNo = flag === 0 ? 'no' : 'yes';
-  console.log(`Question: ${num}`);
-  const answer = actual('Your answer: ');
-  if ((flag && answer === 'yes') || (!flag && answer === 'no')) {
-    console.log('Correct!');
-  } else {
-    return console.log(`${noYes} is wrong answer ;(. Correct answer was ${yesNo}. Let's try again, ${user}!`);
-  }
-  return even(user, i + 1);
+  return console.log(`Congratulations, ${user}!`);
 };
 
 export default actual;
