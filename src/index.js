@@ -1,13 +1,13 @@
 import readlineSync from 'readline-sync';
-import { cons, car, cdr } from '@hexlet/pairs';
+import { car, cdr } from '@hexlet/pairs';
 
 const actual = (query) => readlineSync.question(query);
 export const rand = () => Math.floor(Math.random() ** 2 * 100);
 export const engine = (user, func) => {
   let pair = func();
   for (let i = 1; i !== 4; i += 1) {
-    let quest = car(pair);
-    let answer = cdr(pair);
+    const quest = car(pair);
+    const answer = cdr(pair);
     console.log(`Question: ${quest}`);
     const userAnswer = actual('You answer: ');
     if (answer === userAnswer) {
