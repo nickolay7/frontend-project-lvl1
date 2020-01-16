@@ -2,6 +2,8 @@
 
 import readlineSync from 'readline-sync';
 import { car, cdr } from '@hexlet/pairs';
+import { brain-even } from 'bin/brain-even';
+import { brain-calc } from 'bin/brain-calc';
 
 const actual = (query) => readlineSync.question(query);
 export const rand = () => Math.floor(Math.random() ** 2 * 100);
@@ -21,5 +23,21 @@ export const engine = (user, func) => {quest
   }
   return console.log(`Congratulations, ${user}!`);
 };
+
+console.log('Please select game : "brain-even, brain-calc, brain-gcd"');
+const gameName = actual('Select;)');
+switch (gameName) {
+  case  'brain-even' :
+    brain-even();
+    break;
+  case 'brain-calc' :
+    brain-calc();
+    break;
+  case 'brain-gcd' :
+    brain-gcd();
+    break;
+  default :
+    break;
+}
 
 export default actual;
