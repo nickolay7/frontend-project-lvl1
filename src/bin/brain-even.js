@@ -9,5 +9,9 @@ const generate = () => {
   const answer = quest % 2 === 0 ? 'yes' : 'no';
   return cons(quest, answer);
 };
-const userName = begin('Answer "yes" if the number is even, otherwise answer "no".');
-engine(userName, generate);
+
+export const brainEven = () => {
+  const userName = begin('Answer "yes" if the number is even, otherwise answer "no".');
+  engine(userName, generate);
+};
+
