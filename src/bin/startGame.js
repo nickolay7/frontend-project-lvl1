@@ -2,19 +2,20 @@
 
 import brainEven from './brain-even';
 import brainCalc from './brain-calc';
+import brainGcd from './brain-gcd';
 
 import actual from '../index';
 
-console.log('Please select game : "brain-even, brain-calc, brain-gcd"');
+console.log('Please select game : "brain-even: 1, brain-calc: 2, brain-gcd: 3"');
 const gameName = actual('Select;)');
 switch (gameName) {
-  case 'brain-even':
+  case '1':
     brainEven();
     break;
-  case 'brain-calc':
+  case '2':
     brainCalc();
     break;
-  case 'brain-gcd':
+  case '3':
     brainGcd();
     break;
   default:
