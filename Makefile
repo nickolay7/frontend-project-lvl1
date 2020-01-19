@@ -1,5 +1,5 @@
 start:
-	npx babel-node 'src/index.js'
+	npx babel-node 'src/bin/startGame.js'
 
 install:
 	npm install
