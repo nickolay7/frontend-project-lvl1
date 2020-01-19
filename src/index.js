@@ -2,8 +2,8 @@
 
 import readlineSync from 'readline-sync';
 import { car, cdr } from '@hexlet/pairs';
-import { brainEven } from 'bin/brain-even';
-import { brainCalc } from 'bin/brain-calc';
+import { brainEven } from './bin/brain-even';
+//import { brainCalc } from './bin/brain-calc';
 
 const actual = (query) => readlineSync.question(query);
 export const rand = () => Math.floor(Math.random() ** 2 * 100);
