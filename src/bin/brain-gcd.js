@@ -5,8 +5,8 @@ import begin from './brain-games';
 import { engine, rand } from '../index';
 
 const generate = () => {
-  let num1 = rand();
-  let num2 = rand();
+  let num1 = rand(1, 21);
+  let num2 = rand(1, 21);
   const quest = `${num1} ${num2}`;
   while (num1 !== num2) {
     (num1 > num2) ? (num1 -= num2) : (num2 -= num1);
