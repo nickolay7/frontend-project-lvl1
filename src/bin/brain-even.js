@@ -10,8 +10,7 @@ const generate = () => {
   return cons(quest, answer);
 };
 
-export const brainEven = () => {
+export default () => {
   const userName = begin('Answer "yes" if the number is even, otherwise answer "no".');
   engine(userName, generate);
 };
-
