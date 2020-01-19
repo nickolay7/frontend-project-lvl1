@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 import { car, cdr } from '@hexlet/pairs';
 
 const actual = (query) => readlineSync.question(query);
-export const rand = () => Math.floor(1 + Math.random() ** 2 * 100);
+export const rand = (min, max) => Math.floor(min + Math.random() * (max - min));
 export const engine = (user, func) => {
   let pair = func();
   for (let i = 1; i !== 4; i += 1) {
