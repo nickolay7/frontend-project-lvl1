@@ -22,20 +22,20 @@ export const engine = (user, func) => {
   return console.log(`Congratulations, ${user}!`);
 };
 
-console.log('Please select game : "brain-even, brain-calc, brain-gcd"');
-const gameName = actual('Select;)');
-switch (gameName) {
-  case  'brain-even' :
-    brainEven();
-    break;
-  case 'brain-calc' :
-    brainCalc();
-    break;
-  case 'brain-gcd' :
-    brainGcd();
-    break;
-  default :
-    break;
-}
+// console.log('Please select game : "brain-even, brain-calc, brain-gcd"');
+// const gameName = actual('Select;)');
+// switch (gameName) {
+//   case  'brain-even' :
+//     brainEven();
+//     break;
+//   case 'brain-calc' :
+//     brainCalc();
+//     break;
+//   case 'brain-gcd' :
+//     brainGcd();
+//     break;
+//   default :
+//     break;
+// }
 
 export default actual;
