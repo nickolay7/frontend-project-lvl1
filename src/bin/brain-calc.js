@@ -29,7 +29,7 @@ const generate = () => {
   }
   return cons(quest, String(answer));
 };
-export const brainCalc = () => {
+export default () => {
   const userName = begin('What is the result of the expression?');
   engine(userName, generate);
 };
