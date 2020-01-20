@@ -4,6 +4,7 @@ import brainEven from './brain-even';
 import brainCalc from './brain-calc';
 import brainGcd from './brain-gcd';
 import brainProgression from './brain-progression';
+import brainPrime from './brain-prime';
 
 import actual from '../index';
 
@@ -21,6 +22,9 @@ switch (gameName) {
     break;
   case '4':
     brainProgression();
+    break;
+  case '5':
+    brainPrime();
     break;
   default:
     break;
