@@ -8,7 +8,7 @@ import brainPrime from './brain-prime';
 
 import actual from '../index';
 
-console.log('Please select game : "brain-even: 1, brain-calc: 2, brain-gcd: 3, brain-progression: 4"');
+console.log('Please select game : brain-even: 1, brain-calc: 2, brain-gcd: 3, brain-progression: 4, brain-prime: 5');
 const gameName = actual('Select;)');
 switch (gameName) {
   case '1':
