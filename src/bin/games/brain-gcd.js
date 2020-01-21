@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 
 import { cons } from '@hexlet/pairs';
-import begin from '../../index';
-import { engine, rand } from '../../index';
+import { engine, rand, begin } from '../../index';
 
 const generate = () => {
   let num1 = rand(1, 21);

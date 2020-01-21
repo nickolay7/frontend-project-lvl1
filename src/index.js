@@ -20,7 +20,7 @@ export const engine = (user, func) => {
   return console.log(`Congratulations, ${user}!`);
 };
 
-export default (instruct) => {
+export const begin = (instruct) => {
   console.log('Welcome to the Brain Games!');
   console.log(instruct);
   console.log('');
