@@ -9,7 +9,11 @@ const generate = () => {
   let num2 = rand(1, 21);
   const quest = `${num1} ${num2}`;
   while (num1 !== num2) {
-    (num1 > num2) ? (num1 -= num2) : (num2 -= num1);
+    if (num1 > num2) {
+      num1 -= num2;
+    } else {
+      num2 -= num1;
+    }
   }
   return cons(quest, String(num1));
 };
