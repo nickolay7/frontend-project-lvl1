@@ -3,7 +3,13 @@ import { car, cdr } from '@hexlet/pairs';
 
 export const actual = (query) => readlineSync.question(query);
 export const rand = (min, max) => Math.floor(min + Math.random() * (max - min));
-export const engine = (user, func) => {
+export const engine = (cond, func) => {
+  console.log('Welcome to the Brain Games!');
+  console.log(cond);
+  console.log('');
+  const userName = actual('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
+  console.log('');
   let pair = func();
   for (let i = 1; i !== 4; i += 1) {
     const quest = car(pair);
@@ -13,19 +19,19 @@ export const engine = (user, func) => {
     if (answer === userAnswer) {
       console.log('Correct!');
     } else {
-      return console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}. Let's try again, ${user}!`);
+      return console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}. Let's try again, ${userName}!`);
     }
     pair = func();
   }
-  return console.log(`Congratulations, ${user}!`);
+  return console.log(`Congratulations, ${userName}!`);
 };
 
-export const begin = (instruct) => {
-  console.log('Welcome to the Brain Games!');
-  console.log(instruct);
-  console.log('');
-  const userName = actual('May I have your name? ');
-  console.log(`Hello, ${userName}!`);
-  console.log('');
-  return userName;
-};
+// export const begin = (instruct) => {
+//   console.log('Welcome to the Brain Games!');
+//   console.log(instruct);
+//   console.log('');
+//   const userName = actual('May I have your name? ');
+//   console.log(`Hello, ${userName}!`);
+//   console.log('');
+//   return userName;
+// };
