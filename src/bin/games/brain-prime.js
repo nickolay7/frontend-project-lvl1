@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { cons } from '@hexlet/pairs';
-import { engine, rand, begin } from '../../index';
+import { engine, rand } from '../../index';
 
 const isPrime = (x) => {
   if (x < 2) return false;
@@ -20,8 +20,8 @@ const generate = () => {
   const answer = isPrime(quest) ? 'yes' : 'no';
   return cons(quest, answer);
 };
+const cond = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 export default () => {
-  const userName = begin('Answer "yes" if given number is prime. Otherwise answer "no".');
-  engine(userName, generate);
+  engine(cond, generate);
 };

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { cons } from '@hexlet/pairs';
-import { engine, rand, begin } from '../../index';
+import { engine, rand } from '../../index';
 
 const generate = () => {
   let num1 = rand(1, 21);
@@ -16,7 +16,8 @@ const generate = () => {
   }
   return cons(quest, String(num1));
 };
+const cond = 'Find the greatest common divisor of given numbers.';
+
 export default () => {
-  const userName = begin('Find the greatest common divisor of given numbers.');
-  engine(userName, generate);
+  engine(cond, generate);
 };

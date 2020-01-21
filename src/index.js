@@ -25,13 +25,3 @@ export const engine = (cond, func) => {
   }
   return console.log(`Congratulations, ${userName}!`);
 };
-
-// export const begin = (instruct) => {
-//   console.log('Welcome to the Brain Games!');
-//   console.log(instruct);
-//   console.log('');
-//   const userName = actual('May I have your name? ');
-//   console.log(`Hello, ${userName}!`);
-//   console.log('');
-//   return userName;
-// };

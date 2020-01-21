@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { cons } from '@hexlet/pairs';
-import { engine, rand, begin } from '../../index';
+import { engine, rand } from '../../index';
 
 const generate = () => {
   let start = rand(1, 10);
@@ -20,7 +20,8 @@ const generate = () => {
   }
   return cons(quest, String(answer));
 };
+const cond = 'What number is missing in the progression?';
+
 export default () => {
-  const userName = begin('What number is missing in the progression?');
-  engine(userName, generate);
+  engine(cond, generate);
 };

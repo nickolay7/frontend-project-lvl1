@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { cons } from '@hexlet/pairs';
-import { engine, rand, begin } from '../../index';
+import { engine, rand } from '../../index';
 
 const operate = () => {
   const set = ['+', '-', '*'];
@@ -28,7 +28,8 @@ const generate = () => {
   }
   return cons(quest, String(answer));
 };
+const cond = 'What is the result of the expression?';
+
 export default () => {
-  const userName = begin('What is the result of the expression?');
-  engine(userName, generate);
+  engine(cond, generate);
 };
