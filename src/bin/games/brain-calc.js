@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { cons } from '@hexlet/pairs';
-import begin from './brain-games';
+import begin from '../../index';
 import { engine, rand } from '../../index';
 
 const operate = () => {
