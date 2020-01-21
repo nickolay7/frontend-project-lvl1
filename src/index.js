@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import { car, cdr } from '@hexlet/pairs';
 
-const actual = (query) => readlineSync.question(query);
+export const actual = (query) => readlineSync.question(query);
 export const rand = (min, max) => Math.floor(min + Math.random() * (max - min));
 export const engine = (user, func) => {
   let pair = func();
@@ -20,4 +20,12 @@ export const engine = (user, func) => {
   return console.log(`Congratulations, ${user}!`);
 };
 
-export default actual;
+export default (instruct) => {
+  console.log('Welcome to the Brain Games!');
+  console.log(instruct);
+  console.log('');
+  const userName = actual('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
+  console.log('');
+  return userName;
+};
