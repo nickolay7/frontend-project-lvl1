@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-import brainEven from './brain-even';
-import brainCalc from './brain-calc';
-import brainGcd from './brain-gcd';
-import brainProgression from './brain-progression';
-import brainPrime from './brain-prime';
+import brainEven from './games/brain-even';
+import brainCalc from './games/brain-calc';
+import brainGcd from './games/brain-gcd';
+import brainProgression from './games/brain-progression';
+import brainPrime from './games/brain-prime';
 
 import actual from '../index';
 

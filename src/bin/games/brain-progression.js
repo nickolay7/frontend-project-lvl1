@@ -2,7 +2,7 @@
 
 import { cons } from '@hexlet/pairs';
 import begin from './brain-games';
-import { engine, rand } from '../index';
+import { engine, rand } from '../../index';
 
 const generate = () => {
   let start = rand(1, 10);
