@@ -1,5 +1,5 @@
 import { cons } from '@hexlet/pairs';
-import { engine, rand } from '../index';
+import { engine, getNumber } from '../index';
 
 const isPrime = (x) => {
   if (x < 2) return false;
@@ -14,7 +14,7 @@ const isPrime = (x) => {
 };
 
 const generate = () => {
-  const quest = rand(1, 101);
+  const quest = getNumber(1, 101);
   const answer = isPrime(quest) ? 'yes' : 'no';
   return cons(quest, answer);
 };

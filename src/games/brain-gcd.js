@@ -1,9 +1,9 @@
 import { cons } from '@hexlet/pairs';
-import { engine, rand } from '../index';
+import { engine, getNumber } from '../index';
 
 const generate = () => {
-  let num1 = rand(1, 21);
-  let num2 = rand(1, 21);
+  let num1 = getNumber(1, 21);
+  let num2 = getNumber(1, 21);
   const quest = `${num1} ${num2}`;
   while (num1 !== num2) {
     if (num1 > num2) {

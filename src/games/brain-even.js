@@ -1,8 +1,8 @@
 import { cons } from '@hexlet/pairs';
-import { engine, rand } from '../index';
+import { engine, getNumber } from '../index';
 
 const generate = () => {
-  const quest = rand(1, 101);
+  const quest = getNumber(1, 101);
   const answer = quest % 2 === 0 ? 'yes' : 'no';
   return cons(quest, answer);
 };
