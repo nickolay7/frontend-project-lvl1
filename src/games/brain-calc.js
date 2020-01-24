@@ -1,13 +1,13 @@
 import { cons } from '@hexlet/pairs';
-import { engine, getNumber } from '../index';
+import { engine, getNumber, min, max } from '../index';
 
 const operate = () => {
   const set = ['+', '-', '*'];
   return set[Math.floor(Math.random() * 3)];
 };
 const generate = () => {
-  const operand1 = getNumber(1, 21);
-  const operand2 = getNumber(1, 21);
+  const operand1 = getNumber(min, max);
+  const operand2 = getNumber(min, max);
   const operator = operate();
   const quest = `${operand1} ${operator} ${operand2}`;
   let answer;
