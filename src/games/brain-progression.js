@@ -1,10 +1,10 @@
 import { cons } from '@hexlet/pairs';
-import { engine, getNumber } from '../index';
+import { engine, getNumber, max, min } from '../index';
 
 const generate = () => {
-  let start = getNumber(1, 10);
-  const step = getNumber(1, 10);
-  const unknown = getNumber(1, 11);
+  let start = getNumber(min, max);
+  const step = getNumber(min, max);
+  const unknown = getNumber(min, max);
   let quest = `${start}`;
   let answer;
   for (let i = 1; i < 10; i += 1) {
