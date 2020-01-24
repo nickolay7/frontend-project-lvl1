@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import { cons } from '@hexlet/pairs';
 import { engine, rand } from '../index';
 
