@@ -3,7 +3,7 @@ import { engine, getNumber, min, max } from '../index';
 
 const operate = () => {
   const set = ['+', '-', '*'];
-  return set[Math.floor(Math.random() * 3)];
+  return set[getNumber(0, 3)];
 };
 const generate = () => {
   const operand1 = getNumber(min, max);
