@@ -1,5 +1,7 @@
 import { cons } from '@hexlet/pairs';
-import { engine, getNumber, max, min } from '../index';
+import {
+  engine, getNumber, max, min,
+} from '../index';
 
 const generatePair = () => {
   let num1 = getNumber(min, max);

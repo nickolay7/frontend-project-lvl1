@@ -1,5 +1,7 @@
 import { cons } from '@hexlet/pairs';
-import { engine, getNumber, min, max } from '../index';
+import {
+  engine, getNumber, min, max,
+} from '../index';
 
 const getOperator = () => {
   const set = ['+', '-', '*'];
