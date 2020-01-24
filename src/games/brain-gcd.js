@@ -1,7 +1,7 @@
 import { cons } from '@hexlet/pairs';
 import { engine, getNumber, max, min } from '../index';
 
-const generate = () => {
+const generatePair = () => {
   let num1 = getNumber(min, max);
   let num2 = getNumber(min, max);
   const quest = `${num1} ${num2}`;
@@ -17,5 +17,5 @@ const generate = () => {
 const cond = 'Find the greatest common divisor of given numbers.';
 
 export default () => {
-  engine(cond, generate);
+  engine(cond, generatePair);
 };

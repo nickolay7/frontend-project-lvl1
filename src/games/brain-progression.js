@@ -1,7 +1,7 @@
 import { cons } from '@hexlet/pairs';
 import { engine, getNumber, max, min } from '../index';
 
-const generate = () => {
+const generatePair = () => {
   let start = getNumber(min, max);
   const step = getNumber(min, max);
   const unknown = getNumber(min, max);
@@ -21,5 +21,5 @@ const generate = () => {
 const cond = 'What number is missing in the progression?';
 
 export default () => {
-  engine(cond, generate);
+  engine(cond, generatePair);
 };

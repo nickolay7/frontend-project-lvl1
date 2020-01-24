@@ -13,13 +13,14 @@ const isPrime = (x) => {
   return true;
 };
 
-const generate = () => {
+const generatePair = () => {
   const quest = getNumber(min, max);
   const answer = isPrime(quest) ? 'yes' : 'no';
   return cons(quest, answer);
 };
+
 const cond = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 export default () => {
-  engine(cond, generate);
+  engine(cond, generatePair);
 };
