@@ -28,8 +28,8 @@ const generatePair = () => {
   }
   return cons(quest, String(answer));
 };
-const cond = 'What is the result of the expression?';
+const conditions = 'What is the result of the expression?';
 
 export default () => {
-  engine(cond, generatePair);
+  engine(conditions, generatePair);
 };

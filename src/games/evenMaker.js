@@ -8,8 +8,8 @@ const generatePair = () => {
   const answer = quest % 2 === 0 ? 'yes' : 'no';
   return cons(quest, answer);
 };
-const cond = 'Answer "yes" if the number is even, otherwise answer "no".';
+const conditions = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 export default () => {
-  engine(cond, generatePair);
+  engine(conditions, generatePair);
 };

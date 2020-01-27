@@ -16,8 +16,8 @@ const generatePair = () => {
   }
   return cons(quest, String(num1));
 };
-const cond = 'Find the greatest common divisor of given numbers.';
+const conditions = 'Find the greatest common divisor of given numbers.';
 
 export default () => {
-  engine(cond, generatePair);
+  engine(conditions, generatePair);
 };

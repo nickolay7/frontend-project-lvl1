@@ -20,8 +20,8 @@ const generatePair = () => {
   }
   return cons(quest, String(answer));
 };
-const cond = 'What number is missing in the progression?';
+const conditions = 'What number is missing in the progression?';
 
 export default () => {
-  engine(cond, generatePair);
+  engine(conditions, generatePair);
 };

@@ -21,8 +21,8 @@ const generatePair = () => {
   return cons(quest, answer);
 };
 
-const cond = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const conditions = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 export default () => {
-  engine(cond, generatePair);
+  engine(conditions, generatePair);
 };
