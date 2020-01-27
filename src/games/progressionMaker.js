@@ -3,7 +3,7 @@ import {
   engine, getNumber, max, min,
 } from '..';
 
-const generatePair = () => {
+const generateProgression = () => {
   let start = getNumber(min, max);
   const step = getNumber(min, max);
   const unknown = getNumber(min, max);
@@ -23,5 +23,5 @@ const generatePair = () => {
 const conditions = 'What number is missing in the progression?';
 
 export default () => {
-  engine(conditions, generatePair);
+  engine(conditions, generateProgression);
 };

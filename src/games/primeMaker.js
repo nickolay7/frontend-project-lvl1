@@ -15,7 +15,7 @@ const isPrime = (x) => {
   return true;
 };
 
-const generatePair = () => {
+const generateNumber = () => {
   const quest = getNumber(min, max);
   const answer = isPrime(quest) ? 'yes' : 'no';
   return cons(quest, answer);
@@ -24,5 +24,5 @@ const generatePair = () => {
 const conditions = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 export default () => {
-  engine(conditions, generatePair);
+  engine(conditions, generateNumber);
 };

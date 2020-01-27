@@ -7,7 +7,7 @@ const getOperator = () => {
   const set = ['+', '-', '*'];
   return set[getNumber(0, 3)];
 };
-const generatePair = () => {
+const generateExpression = () => {
   const operand1 = getNumber(min, max);
   const operand2 = getNumber(min, max);
   const operator = getOperator();
@@ -31,5 +31,5 @@ const generatePair = () => {
 const conditions = 'What is the result of the expression?';
 
 export default () => {
-  engine(conditions, generatePair);
+  engine(conditions, generateExpression);
 };

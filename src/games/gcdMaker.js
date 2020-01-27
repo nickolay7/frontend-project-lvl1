@@ -3,7 +3,7 @@ import {
   engine, getNumber, max, min,
 } from '..';
 
-const generatePair = () => {
+const generatePairOfNumbers = () => {
   let num1 = getNumber(min, max);
   let num2 = getNumber(min, max);
   const quest = `${num1} ${num2}`;
@@ -19,5 +19,5 @@ const generatePair = () => {
 const conditions = 'Find the greatest common divisor of given numbers.';
 
 export default () => {
-  engine(conditions, generatePair);
+  engine(conditions, generatePairOfNumbers);
 };
