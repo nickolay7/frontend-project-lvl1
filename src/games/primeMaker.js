@@ -1,7 +1,7 @@
 import { cons } from '@hexlet/pairs';
 import {
   engine, getNumber, min, max,
-} from '../index';
+} from '..';
 
 const isPrime = (x) => {
   if (x < 2) return false;
