@@ -4,8 +4,8 @@ import {
 } from '..';
 
 const getOperator = () => {
-  const set = ['+', '-', '*'];
-  return set[getNumber(0, 3)];
+  const operators = ['+', '-', '*'];
+  return operators[getNumber(0, 3)];
 };
 const generateExpression = () => {
   const operand1 = getNumber(min, max);
