@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import playGame from '../games/calcMaker';
+import playGame from '../games/gcdMaker';
 
 playGame();
