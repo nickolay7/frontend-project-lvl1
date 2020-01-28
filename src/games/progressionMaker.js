@@ -4,19 +4,19 @@ import {
 } from '..';
 
 const generateProgression = () => {
-  let start = getNumber(min, max);
-  const step = getNumber(min, max);
-  const unknown = getNumber(min, max);
-  let quest = `${start}`;
+  const start = getNumber(min, max);
+  const diff = getNumber(min, max);
+  const hiddenElement = getNumber(min, max);
+  let quest = '';
   let answer;
-  for (let i = 1; i < 10; i += 1) {
-    if (i === unknown) {
-      start += step;
+  for (let i = 0; i < 10; i += 1) {
+    const nextElement = start + diff * i;
+    if (i === hiddenElement) {
       quest += ' ..';
-      answer = start;
+      answer = nextElement;
+    } else {
+      quest += ` ${nextElement}`;
     }
-    start += step;
-    quest += ` ${start}`;
   }
   return cons(quest, String(answer));
 };
