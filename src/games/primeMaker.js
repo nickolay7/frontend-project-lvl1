@@ -6,7 +6,7 @@ import {
 const isPrime = (x) => {
   if (x < 2) return false;
 
-  for (let i = x - 1; i > 1; i -= 1) {
+  for (let i = 2; i <= x / 2; i += 1) {
     if (x % i === 0) {
       return false;
     }
