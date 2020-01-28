@@ -23,4 +23,5 @@ export const engine = (condition, func) => {
     }
   }
   console.log(`Congratulations, ${userName}!`);
+  return 1;
 };
