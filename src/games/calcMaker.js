@@ -1,15 +1,15 @@
 import { cons } from '@hexlet/pairs';
 import {
-  engine, getNumber, min, max,
+  engine, getRandomNumber, min, max,
 } from '..';
 
 const getOperator = () => {
   const operators = ['+', '-', '*'];
-  return operators[getNumber(0, 3)];
+  return operators[getRandomNumber(0, 3)];
 };
 const generateExpression = () => {
-  const operand1 = getNumber(min, max);
-  const operand2 = getNumber(min, max);
+  const operand1 = getRandomNumber(min, max);
+  const operand2 = getRandomNumber(min, max);
   const operator = getOperator();
   const question = `${operand1} ${operator} ${operand2}`;
   let answer;

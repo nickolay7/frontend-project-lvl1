@@ -1,12 +1,12 @@
 import { cons } from '@hexlet/pairs';
 import {
-  engine, getNumber, max, min,
+  engine, getRandomNumber, max, min,
 } from '..';
 
 const generateProgression = () => {
-  const start = getNumber(min, max);
-  const diff = getNumber(min, max);
-  const hiddenElement = getNumber(min, max);
+  const start = getRandomNumber(min, max);
+  const diff = getRandomNumber(min, max);
+  const hiddenElement = getRandomNumber(min, max);
   const progressionLength = 10;
   let question = '';
   let answer;

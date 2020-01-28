@@ -1,6 +1,6 @@
 import { cons } from '@hexlet/pairs';
 import {
-  engine, getNumber, min, max,
+  engine, getRandomNumber, min, max,
 } from '..';
 
 const isPrime = (x) => {
@@ -16,7 +16,7 @@ const isPrime = (x) => {
 };
 
 const generateNumber = () => {
-  const question = getNumber(min, max);
+  const question = getRandomNumber(min, max);
   const answer = isPrime(question) ? 'yes' : 'no';
   return cons(question, answer);
 };

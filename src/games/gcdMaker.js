@@ -1,11 +1,11 @@
 import { cons } from '@hexlet/pairs';
 import {
-  engine, getNumber, max, min,
+  engine, getRandomNumber, max, min,
 } from '..';
 
 const generatePairOfNumbers = () => {
-  let num1 = getNumber(min, max);
-  let num2 = getNumber(min, max);
+  let num1 = getRandomNumber(min, max);
+  let num2 = getRandomNumber(min, max);
   const question = `${num1} ${num2}`;
   while (num1 !== num2) {
     if (num1 > num2) {

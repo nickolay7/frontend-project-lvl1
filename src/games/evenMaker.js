@@ -1,10 +1,10 @@
 import { cons } from '@hexlet/pairs';
 import {
-  engine, getNumber, max, min,
+  engine, getRandomNumber, max, min,
 } from '..';
 
 const generatePairOfNumbers = () => {
-  const question = getNumber(min, max);
+  const question = getRandomNumber(min, max);
   const answer = question % 2 === 0 ? 'yes' : 'no';
   return cons(question, answer);
 };
