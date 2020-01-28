@@ -16,9 +16,9 @@ const isPrime = (x) => {
 };
 
 const generateNumber = () => {
-  const quest = getNumber(min, max);
-  const answer = isPrime(quest) ? 'yes' : 'no';
-  return cons(quest, answer);
+  const question = getNumber(min, max);
+  const answer = isPrime(question) ? 'yes' : 'no';
+  return cons(question, answer);
 };
 
 const conditions = 'Answer "yes" if given number is prime. Otherwise answer "no".';

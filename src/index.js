@@ -5,18 +5,18 @@ export const actual = (query) => readlineSync.question(query);
 export const getNumber = (min, max) => Math.floor(min + Math.random() * (max - min));
 export const min = 1;
 export const max = 10;
-export const engine = (cond, func) => {
+export const engine = (condition, func) => {
   console.log('Welcome to the Brain Games!');
-  console.log(cond);
+  console.log(condition);
   console.log('');
   const userName = actual('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log('');
   let pair = func();
   for (let i = 1; i !== 4; i += 1) {
-    const quest = car(pair);
+    const question = car(pair);
     const answer = cdr(pair);
-    console.log(`Question: ${quest}`);
+    console.log(`Question: ${question}`);
     const userAnswer = actual('You answer: ');
     if (answer === userAnswer) {
       console.log('Correct!');

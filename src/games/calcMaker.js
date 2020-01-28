@@ -11,7 +11,7 @@ const generateExpression = () => {
   const operand1 = getNumber(min, max);
   const operand2 = getNumber(min, max);
   const operator = getOperator();
-  const quest = `${operand1} ${operator} ${operand2}`;
+  const question = `${operand1} ${operator} ${operand2}`;
   let answer;
   switch (operator) {
     case '*':
@@ -26,7 +26,7 @@ const generateExpression = () => {
     default:
       break;
   }
-  return cons(quest, String(answer));
+  return cons(question, String(answer));
 };
 const conditions = 'What is the result of the expression?';
 
