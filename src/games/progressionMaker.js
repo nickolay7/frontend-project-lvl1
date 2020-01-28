@@ -12,10 +12,10 @@ const generateProgression = () => {
   for (let i = 0; i < 10; i += 1) {
     const nextElement = start + diff * i;
     if (i === hiddenElement) {
-      question += ' ..';
+      question = `${question} ..`;
       answer = nextElement;
     } else {
-      question += ` ${nextElement}`;
+      question = `${question} ${nextElement}`;
     }
   }
   return cons(question, String(answer));
