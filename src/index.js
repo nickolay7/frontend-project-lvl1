@@ -9,8 +9,8 @@ export const engine = (condition, func) => {
   const userName = actual('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log('');
-  let pair = func();
   for (let i = 1; i !== 4; i += 1) {
+    const pair = func();
     const question = car(pair);
     const answer = cdr(pair);
     console.log(`Question: ${question}`);
@@ -20,7 +20,6 @@ export const engine = (condition, func) => {
     } else {
       return console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}. Let's try again, ${userName}!`);
     }
-    pair = func();
   }
   return console.log(`Congratulations, ${userName}!`);
 };
