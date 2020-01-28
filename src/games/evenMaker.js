@@ -12,5 +12,4 @@ const conditions = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 export default () => {
   engine(conditions, generatePairOfNumbers);
-
 };
