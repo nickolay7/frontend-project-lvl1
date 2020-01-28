@@ -1,7 +1,8 @@
 import { cons } from '@hexlet/pairs';
+import { engine } from '..';
 import {
-  engine, getRandomNumber, min, max,
-} from '..';
+  getRandomNumber, min, max,
+} from '../utils';
 
 const getOperator = () => {
   const operators = ['+', '-', '*'];

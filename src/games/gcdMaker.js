@@ -1,7 +1,8 @@
 import { cons } from '@hexlet/pairs';
+import { engine } from '..';
 import {
-  engine, getRandomNumber, max, min,
-} from '..';
+  getRandomNumber, min, max,
+} from '../utils';
 
 const generatePairOfNumbers = () => {
   let num1 = getRandomNumber(min, max);
