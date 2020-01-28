@@ -7,9 +7,10 @@ const generateProgression = () => {
   const start = getNumber(min, max);
   const diff = getNumber(min, max);
   const hiddenElement = getNumber(min, max);
+  const progressionLength = 10;
   let question = '';
   let answer;
-  for (let i = 0; i < 10; i += 1) {
+  for (let i = 0; i < progressionLength; i += 1) {
     const nextElement = start + diff * i;
     if (i === hiddenElement) {
       question = `${question} ..`;
