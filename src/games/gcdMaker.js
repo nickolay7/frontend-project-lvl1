@@ -4,18 +4,21 @@ import {
   getRandomNumber, min, max,
 } from '../utils';
 
+const gcd = (a, b) => {
+  while (a !== b) {
+    if (a > b) {
+      a -= b;
+    } else {
+      b -= a;
+    }
+  }
+  return String(a);
+};
 const generateGcdGameData = () => {
   let num1 = getRandomNumber(min, max);
   let num2 = getRandomNumber(min, max);
   const question = `${num1} ${num2}`;
-  while (num1 !== num2) {
-    if (num1 > num2) {
-      num1 -= num2;
-    } else {
-      num2 -= num1;
-    }
-  }
-  return cons(question, String(num1));
+  return cons(question, gcd(num1, num2));
 };
 const conditions = 'Find the greatest common divisor of given numbers.';
 
