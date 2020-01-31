@@ -4,11 +4,11 @@ import {
   getRandomNumber, min, max,
 } from '../utils';
 
+const progressionLength = 10;
 const generateProgressionGameData = () => {
   const start = getRandomNumber(min, max);
   const diff = getRandomNumber(min, max);
   const hiddenElement = getRandomNumber(min, max);
-  const progressionLength = 10;
   let question = '';
   let answer;
   for (let i = 0; i < progressionLength; i += 1) {
