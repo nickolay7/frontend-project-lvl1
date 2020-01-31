@@ -6,7 +6,7 @@ import {
 
 const getOperator = () => {
   const operators = ['+', '-', '*'];
-  return operators[getRandomNumber(0, 3)];
+  return operators[getRandomNumber(0, operators.length)];
 };
 const generateExpression = () => {
   const operand1 = getRandomNumber(min, max);
