@@ -4,7 +4,9 @@ import {
   getRandomNumber, min, max,
 } from '../utils';
 
-const gcd = (a, b) => {
+const gcd = (n1, n2) => {
+  let a = n1;
+  let b = n2;
   while (a !== b) {
     if (a > b) {
       a -= b;
@@ -12,11 +14,11 @@ const gcd = (a, b) => {
       b -= a;
     }
   }
-  return String(a);
+  return String(b);
 };
 const generateGcdGameData = () => {
-  let num1 = getRandomNumber(min, max);
-  let num2 = getRandomNumber(min, max);
+  const num1 = getRandomNumber(min, max);
+  const num2 = getRandomNumber(min, max);
   const question = `${num1} ${num2}`;
   return cons(question, gcd(num1, num2));
 };
