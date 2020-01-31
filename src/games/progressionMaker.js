@@ -4,7 +4,7 @@ import {
   getRandomNumber, min, max,
 } from '../utils';
 
-const generateProgression = () => {
+const generateProgressionGameData = () => {
   const start = getRandomNumber(min, max);
   const diff = getRandomNumber(min, max);
   const hiddenElement = getRandomNumber(min, max);
@@ -25,5 +25,5 @@ const generateProgression = () => {
 const conditions = 'What number is missing in the progression?';
 
 export default () => {
-  engine(conditions, generateProgression);
+  engine(conditions, generateProgressionGameData);
 };

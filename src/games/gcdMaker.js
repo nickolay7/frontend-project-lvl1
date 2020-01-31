@@ -4,7 +4,7 @@ import {
   getRandomNumber, min, max,
 } from '../utils';
 
-const generatePairOfNumbers = () => {
+const generateGcdGameData = () => {
   let num1 = getRandomNumber(min, max);
   let num2 = getRandomNumber(min, max);
   const question = `${num1} ${num2}`;
@@ -20,5 +20,5 @@ const generatePairOfNumbers = () => {
 const conditions = 'Find the greatest common divisor of given numbers.';
 
 export default () => {
-  engine(conditions, generatePairOfNumbers);
+  engine(conditions, generateGcdGameData);
 };

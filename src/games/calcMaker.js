@@ -8,7 +8,7 @@ const getOperator = () => {
   const operators = ['+', '-', '*'];
   return operators[getRandomNumber(0, operators.length)];
 };
-const generateExpression = () => {
+const generateCalcGameData = () => {
   const operand1 = getRandomNumber(min, max);
   const operand2 = getRandomNumber(min, max);
   const operator = getOperator();
@@ -32,5 +32,5 @@ const generateExpression = () => {
 const conditions = 'What is the result of the expression?';
 
 export default () => {
-  engine(conditions, generateExpression);
+  engine(conditions, generateCalcGameData);
 };
