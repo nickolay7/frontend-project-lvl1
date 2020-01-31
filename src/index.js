@@ -11,17 +11,18 @@ export const engine = (condition, func) => {
   console.log(`Hello, ${userName}!`);
   console.log('');
   for (let i = 1; i <= roundsNumber; i += 1) {
-    const pair = func();
-    const question = car(pair);
-    const answer = cdr(pair);
+    const getData = func();
+    const question = car(getData);
+    const answer = cdr(getData);
     console.log(`Question: ${question}`);
     const userAnswer = actual('You answer: ');
     if (answer === userAnswer) {
       console.log('Correct!');
     } else {
-      return console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}. Let's try again, ${userName}!`);
+      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}.`);
+      console.log(`Let's try again, ${userName}!`);
+      return;
     }
   }
   console.log(`Congratulations, ${userName}!`);
-  return 1;
 };
