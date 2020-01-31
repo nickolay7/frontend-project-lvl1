@@ -1,6 +1,6 @@
 {
   "name": "frontend-project-lvl1",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "training frontend project, level1",
   "main": "index.js",
   "files": [
@@ -41,7 +41,6 @@
     "@babel/core": "^7.7.2",
     "@babel/node": "^7.7.0",
     "@babel/preset-env": "^7.7.1",
-    "@babel/plugin-proposal-pipeline-operator": "^7.5.0",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
