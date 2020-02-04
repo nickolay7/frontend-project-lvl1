@@ -2,20 +2,20 @@ import readlineSync from 'readline-sync';
 import { car, cdr } from '@hexlet/pairs';
 import { roundsNumber } from './utils';
 
-export const actual = (query) => readlineSync.question(query);
-export const engine = (condition, func) => {
+export const askUser = (query) => readlineSync.question(query);
+export const engine = (condition, getData) => {
   console.log('Welcome to the Brain Games!');
   console.log(condition);
   console.log('');
-  const userName = actual('May I have your name? ');
+  const userName = askUser('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log('');
   for (let i = 1; i <= roundsNumber; i += 1) {
-    const getData = func();
-    const question = car(getData);
-    const answer = cdr(getData);
+    const data = getData();
+    const question = car(data);
+    const answer = cdr(data);
     console.log(`Question:${question}`);
-    const userAnswer = actual('You answer: ');
+    const userAnswer = askUser('You answer: ');
     if (answer === userAnswer) {
       console.log('Correct!');
     } else {
