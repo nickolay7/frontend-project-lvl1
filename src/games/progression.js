@@ -14,9 +14,9 @@ const generateProgressionGameData = () => {
   for (let i = 0; i < progressionLength; i += 1) {
     const nextElement = start + diff * i;
     if (nextElement === hiddenElement) {
-      question = `${question} ..`;
+      question = `${question}.. `;
     } else {
-      question = `${question} ${nextElement}`;
+      question = `${question}${nextElement} `;
     }
   }
   return cons(question, String(answer));

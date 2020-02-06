@@ -14,7 +14,7 @@ export const engine = (condition, getData) => {
     const data = getData();
     const question = car(data);
     const answer = cdr(data);
-    console.log(`Question:${question}`);
+    console.log(`Question: ${question}`);
     const userAnswer = askUser('You answer: ');
     if (answer === userAnswer) {
       console.log('Correct!');
