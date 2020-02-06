@@ -6,7 +6,7 @@ import {
 
 const getOperator = () => {
   const operators = ['+', '-', '*'];
-  return operators[getRandomNumber(0, operators.length)];
+  return operators[getRandomNumber(0, operators.length - 1)];
 };
 const generateCalcGameData = () => {
   const operand1 = getRandomNumber(min, max);
