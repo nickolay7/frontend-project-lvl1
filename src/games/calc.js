@@ -4,10 +4,8 @@ import {
   getRandomNumber, min, max,
 } from '../utils';
 
-const getOperator = () => {
-  const operators = ['+', '-', '*'];
-  return operators[getRandomNumber(0, operators.length - 1)];
-};
+const operators = ['+', '-', '*'];
+const getOperator = () => operators[getRandomNumber(0, operators.length - 1)];
 const generateCalcGameData = () => {
   const operand1 = getRandomNumber(min, max);
   const operand2 = getRandomNumber(min, max);
