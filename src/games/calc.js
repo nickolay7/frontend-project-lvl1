@@ -19,7 +19,7 @@ const generateCalcGameData = () => {
       answer = operand1 * operand2;
       break;
     case '+':
-      answer = +operand1 + +operand2;
+      answer = operand1 + operand2;
       break;
     case '-':
       answer = operand1 - operand2;
