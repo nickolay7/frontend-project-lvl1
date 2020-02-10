@@ -8,18 +8,18 @@ const progressionLength = 10;
 const generateProgressionGameData = () => {
   const start = getRandomNumber(min, max);
   const diff = getRandomNumber(min, max);
-  let question = '';
+  const question = [];
   const hiddenElement = start + diff * getRandomNumber(question.length, progressionLength - 1);
   const answer = hiddenElement;
   for (let i = 0; i < progressionLength; i += 1) {
     const nextElement = start + diff * i;
     if (nextElement === hiddenElement) {
-      question = `${question}.. `;
+      question.push('..');
     } else {
-      question = `${question}${nextElement} `;
+      question.push(nextElement);
     }
   }
-  return cons(question, String(answer));
+  return cons(question.join(' '), String(answer));
 };
 const conditions = 'What number is missing in the progression?';
 
