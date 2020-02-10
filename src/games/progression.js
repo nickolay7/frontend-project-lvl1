@@ -9,7 +9,7 @@ const generateProgressionGameData = () => {
   const start = getRandomNumber(min, max);
   const diff = getRandomNumber(min, max);
   let question = '';
-  const hiddenElement = start + diff * getRandomNumber(question.length, progressionLength);
+  const hiddenElement = start + diff * getRandomNumber(question.length, progressionLength - 1);
   const answer = hiddenElement;
   for (let i = 0; i < progressionLength; i += 1) {
     const nextElement = start + diff * i;
