@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync';
 import { car, cdr } from '@hexlet/pairs';
+import { roundsNumber } from './utils';
 
 export const askUser = (query) => readlineSync.question(query);
 export const engine = (condition, getData) => {
@@ -9,7 +10,6 @@ export const engine = (condition, getData) => {
   const userName = askUser('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log('');
-  const roundsNumber = 3;
   for (let i = 1; i <= roundsNumber; i += 1) {
     const data = getData();
     const question = car(data);
