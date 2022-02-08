@@ -1,4 +1,6 @@
-# frontend-project-lvl1
+# frontend-project-lvl1 / Brain Games
+
+## Loosen your brains a bit ;)
 
 ## Code Climate
 [![CodeClimate](https://api.codeclimate.com/v1/badges/8e4e14463ed40f59ebd8/maintainability)](https://codeclimate.com/github/nickolay7/frontend-project-lvl1/maintainability)
@@ -7,19 +9,25 @@
 [![Build Status](https://travis-ci.org/nickolay7/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/nickolay7/frontend-project-lvl1)
 
 ## Install
-[![asciicast](https://asciinema.org/a/nkqATC9PA89r3ngizGhuN8VwX.svg)](https://asciinema.org/a/nkqATC9PA89r3ngizGhuN8VwX)
+
+#### make install
 
 ## The Calc game
-[![asciicast](https://asciinema.org/a/RafpdCdbFn14AWfCribPfeVnc.svg)](https://asciinema.org/a/RafpdCdbFn14AWfCribPfeVnc)
+
+#### make calc
 
 ## The Even game
-[![asciicast](https://asciinema.org/a/T48LJSOgQwr9mmGbdZOufq22i.svg)](https://asciinema.org/a/T48LJSOgQwr9mmGbdZOufq22i)
+
+#### make even
 
 ## The GCD game
-[![asciicast](https://asciinema.org/a/ZotoFDdsHTcdUrN8QbZgkCg7i.svg)](https://asciinema.org/a/ZotoFDdsHTcdUrN8QbZgkCg7i)
+
+#### make gcd
 
 ## The Prime game
-[![asciicast](https://asciinema.org/a/PEnvEDtRZDTXAUwN0dCm45jM3.svg)](https://asciinema.org/a/PEnvEDtRZDTXAUwN0dCm45jM3)
+
+#### make prime
 
 ## The Progression game
- [![asciicast](https://asciinema.org/a/C3heAzuv0XIcgDxkpVkXeOPuD.svg)](https://asciinema.org/a/C3heAzuv0XIcgDxkpVkXeOPuD)
+
+#### make progression
